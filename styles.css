@@ -9,11 +9,12 @@
     width: 100%;
     height: 100vh;
     background: #eff4fd;
-    position: relative;
+    overflow: hidden;
 }
 
 nav{
     display: flex;
+    flex-wrap: wrap;
     width: 84%;
     margin: auto;
     padding: 20px 0;
@@ -24,6 +25,11 @@ nav{
 .logo{
     width: 100px;
     cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -55,7 +61,6 @@ nav ul li a:hover{
 
 span{
     color: orange;
-    
 }
 
 .detel p{
@@ -70,7 +75,7 @@ span{
     font-weight: bold;
     color: #fff;
     display: inline-block;
-    margin: 30px 0;
+    margin: 10px 10px 30px 0;
     border-radius: 5px;
 }
 
@@ -115,17 +120,16 @@ span{
 }
 
 .container {
-    display: flex; /* Magic starts here, turning your container into a flex container */
-    justify-content: center; /* This centers the child horizontally */
-    align-items: center; /* And this centers it vertically */
-    height: 100vh; /* This will make sure your container is as tall as the entire viewport */
-  }
-  .center {
-    width: 50%; /* Set any width you prefer */
-    height: 50%; /* And any height */
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-
+.center {
+    width: 50%;
+    height: 50%;
+}
 
 .button-49,
 .button-49:after {
@@ -172,50 +176,17 @@ span{
 }
 
 @keyframes glitch {
-  0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
+  0% { clip-path: var(--slice-1); transform: translate(-20px, -10px); }
+  10% { clip-path: var(--slice-3); transform: translate(10px, 10px); }
+  20% { clip-path: var(--slice-1); transform: translate(-10px, 10px); }
+  30% { clip-path: var(--slice-3); transform: translate(0px, 5px); }
+  40% { clip-path: var(--slice-2); transform: translate(-5px, 0px); }
+  50% { clip-path: var(--slice-3); transform: translate(5px, 0px); }
+  60% { clip-path: var(--slice-4); transform: translate(5px, 10px); }
+  70% { clip-path: var(--slice-2); transform: translate(-10px, 10px); }
+  80% { clip-path: var(--slice-5); transform: translate(20px, -10px); }
+  90% { clip-path: var(--slice-1); transform: translate(-10px, 0px); }
+  100% { clip-path: var(--slice-1); transform: translate(0); }
 }
 
 @media (min-width: 768px) {
@@ -224,5 +195,80 @@ span{
     width: 200px;
     height: 86px;
     line-height: 88px;
+  }
+}
+
+/* ------------------------------ */
+/* ✅ Responsive Mobile Fixes */
+/* ------------------------------ */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .detel {
+    margin: 20px;
+  }
+
+  .detel h1 {
+    font-size: 32px;
+  }
+
+  .images {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .images img {
+    position: relative;
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .social {
+    margin: 30px 20px 0;
+  }
+
+  .button-49 {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detel h1 {
+    font-size: 24px;
+  }
+
+  .detel p {
+    font-size: 14px;
+  }
+
+  .button-49 {
+    font-size: 16px;
+    height: 60px;
+    line-height: 62px;
+  }
+
+  .social a {
+    font-size: 24px;
   }
 }
