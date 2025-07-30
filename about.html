@@ -2,6 +2,56 @@
 <html class="no-js" lang="en">
 
     <head>
+		
+
+
+
+		
+		
+		<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .popup {
+      display: none;
+      background-color: #dff0d8;
+      color: #3c763d;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #d6e9c6;
+      margin-top: 20px;
+    }
+  </style>
+
+
+
+
+
+
         <!-- meta data -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -149,7 +199,7 @@ Apart from these, I'm a music lover who loves playing guitar, a Debater, and a v
 									<div class="col-sm-4">
 										<div class="single-about-add-info">
 											<h3>email</h3>
-											<p>fhzakash01@gmail.com</p>
+											<p>fhzakash@gmail.com</p>
 										</div>
 									</div>
 									<!-- <div class="col-sm-4">
@@ -178,19 +228,19 @@ Apart from these, I'm a music lover who loves playing guitar, a Debater, and a v
 											
 										</li>/ li -->
 										<li>
-											<a href="#">
-												<i  class="fa fa-twitter" aria-hidden="true"></i>
+											<a href="https://www.linkedin.com/in/fhzakash/">
+												<i  class="fa fa-linkedin" aria-hidden="true"></i>
 											</a>
 											
 										</li><!-- / li -->
-										<li>
-											<a href="#">
+										<!-- <li>
+											<a href="https://www.linkedin.com/in/fhzakash/">
 												<i  class="fa fa-linkedin" aria-hidden="true"></i>
 											</a>
-										</li><!-- / li -->
+										</li>/ li -->
 										<li>
-											<a href="#">
-												<i  class="fa fa-instagram" aria-hidden="true"></i>
+											<a href="https://github.com/ferdousAkash">
+												<i  class="fa fa-github" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
 										
@@ -677,41 +727,44 @@ As an intern my duty was to upload the products in gaolab as well as updating th
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
 								<div class="contact-form">
-									<form>
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
-												</div><!--/.single-single-contact-btn-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</form><!--/form-->
+									<form id="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
+										<input type="text" name="name" placeholder="Your Name" required>
+										<input type="email" name="email" placeholder="Your Email" required>
+										<input type="text" name="subject" placeholder="Subject" required>
+										<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+										
+										<!-- Hidden input to skip formsubmit redirect page -->
+										<input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+										<input type="hidden" name="_captcha" value="false">
+
+										<button type="submit">Submit</button>
+									</form>
+
+									<div class="popup" id="popup-message">Message sent successfully!</div>
+
+									<script>
+										document.getElementById('contact-form').addEventListener('submit', function (e) {
+										e.preventDefault(); // prevent default submit
+										const form = e.target;
+
+										fetch(form.action, {
+											method: form.method,
+											body: new FormData(form),
+											headers: {
+											'Accept': 'application/json'
+											}
+										}).then(response => {
+											if (response.ok) {
+											document.getElementById('popup-message').style.display = 'block';
+											form.reset();
+											} else {
+											alert("There was a problem sending the message.");
+											}
+										}).catch(error => {
+											alert("Error: " + error.message);
+										});
+										});
+									</script>
 								</div><!--/.contact-form-->
 							</div><!--/.single-contact-box-->
 						</div><!--/.col-->
@@ -729,7 +782,7 @@ As an intern my duty was to upload the products in gaolab as well as updating th
 										</div>
 										<div class="single-contact-add-info">
 											<h3>email</h3>
-											<p>fhzakash01@gmail.com</p>
+											<p>fhzakash@gmail.com</p>
 										</div>
 										<!-- <div class="single-contact-add-info">
 											<h3>website</h3>
@@ -760,7 +813,7 @@ As an intern my duty was to upload the products in gaolab as well as updating th
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
 					<p>
-						&copy; copyright yourname. design and developed by <a href="https://www.themesine.com/">themesine</a>
+						&copy; copyright yourname. design and developed by <a href="https://www.themesine.com/">Akash</a>
 					</p><!--/p-->
 				</div><!--/.text-center-->
 			</div><!--/.container-->
