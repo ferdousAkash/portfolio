@@ -5,7 +5,8 @@ LinkedIn: linkedin.com/in/fhzakash | GitHub: github.com/ferdousAkash | Portfolio
 ---
 
 ## PROFESSIONAL SUMMARY
-Results-driven Technical Project Manager and AI/Full-Stack Software Engineer with proven success driving cross-functional delivery, operational scaling, and technical implementations. Currently leading remote recruitment operations and AI-assisted workflows at Skarion, where rapid promotions (Intern to Executive to Project Manager within six months) and client delivery contributed over $50,000 in company revenue. Backed by a B.Sc. in Computer Science & Engineering (AI Major) from North South University, graduate studies in Statistics & Data Science at Jahangirnagar University, and hands-on engineering experience spanning PyTorch/TFLite computer vision models, LLM pipelines, and production MERN/PERN applications. Champion debater (NSUDC Intra 2024) recognized for strong executive communication, analytical rigor, and cross-functional leadership.
+Technical Project Manager with a software engineering background in AI and full-stack development. Currently managing delivery operations and AI-assisted workflows at Skarion, where I progressed from intern to Project Manager in six months and helped drive over $50,000 in client revenue. I pair hands-on technical literacy—spanning computer vision models, LLM pipelines, and production web applications—with structured project governance and clear, persuasive stakeholder communication developed through competitive debate (NSUDC Intra 2024 Champion).
+
 
 ---
 
