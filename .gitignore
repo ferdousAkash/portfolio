@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+portfolio-v2
+portfolio-v3
+scratch
+*.log
+*.tsbuildinfo
