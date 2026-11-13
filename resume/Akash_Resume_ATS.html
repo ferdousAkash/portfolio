@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Ferdous Hasan Zihad Akash — ATS Resume</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0.36in 0.46in 0.36in 0.46in;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Calibri, 'Segoe UI', Arial, Helvetica, sans-serif;
+      font-size: 9.3pt;
+      line-height: 1.25;
+      color: #111111;
+      background-color: #ffffff;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.35in 0.45in;
+      -webkit-font-smoothing: antialiased;
+      font-variant-ligatures: none;
+      font-feature-settings: "liga" 0, "clig" 0;
+    }
+
+    @media print {
+      body {
+        max-width: none;
+        padding: 0;
+      }
+      .no-print {
+        display: none !important;
+      }
+      a {
+        text-decoration: none;
+        color: inherit !important;
+      }
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 7pt;
+      border-bottom: 1.25pt solid #111111;
+      padding-bottom: 4pt;
+    }
+
+    h1 {
+      font-size: 16pt;
+      font-weight: 700;
+      letter-spacing: 0.4pt;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 2pt;
+    }
+
+    .contact-line {
+      font-size: 8.9pt;
+      color: #222222;
+      margin-top: 1pt;
+    }
+
+    .contact-line a {
+      color: #111111;
+      text-decoration: underline;
+    }
+
+    .separator {
+      margin: 0 3.5pt;
+      color: #666666;
+    }
+
+    /* Section Styles */
+    section {
+      margin-bottom: 5pt;
+    }
+
+    h2 {
+      font-size: 9.8pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5pt;
+      color: #000000;
+      border-bottom: 0.75pt solid #222222;
+      padding-bottom: 1pt;
+      margin-bottom: 3pt;
+      margin-top: 4.5pt;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    p {
+      margin-bottom: 2pt;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Entry Layout */
+    .entry {
+      margin-bottom: 4pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .page-break {
+      page-break-before: always;
+      break-before: page;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 9.4pt;
+    }
+
+    .entry-title {
+      font-weight: 700;
+      color: #000000;
+    }
+
+    .entry-company {
+      font-weight: 700;
+      color: #000000;
+    }
+
+    .entry-date {
+      font-weight: 600;
+      font-size: 8.8pt;
+      color: #222222;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .entry-subtitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 8.8pt;
+      font-style: italic;
+      color: #333333;
+      margin-bottom: 1pt;
+    }
+
+    .entry-location {
+      font-size: 8.8pt;
+      font-style: italic;
+      color: #333333;
+      white-space: nowrap;
+    }
+
+    /* Sub-role inside same company */
+    .sub-role {
+      margin-top: 2.5pt;
+      margin-bottom: 3pt;
+    }
+
+    .sub-role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 9.1pt;
+      font-weight: 700;
+      color: #111111;
+    }
+
+    /* Lists */
+    ul {
+      margin-left: 13pt;
+      margin-top: 1pt;
+      margin-bottom: 2pt;
+    }
+
+    li {
+      margin-bottom: 1pt;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Skills list */
+    .skill-category {
+      margin-bottom: 1.5pt;
+      font-size: 9pt;
+      line-height: 1.25;
+    }
+
+    .skill-label {
+      font-weight: 700;
+      color: #000000;
+    }
+
+    /* Certifications Grid */
+    .cert-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2pt 12pt;
+      margin-top: 2pt;
+      font-size: 8.8pt;
+      line-height: 1.25;
+    }
+
+    .cert-item {
+      padding-left: 8pt;
+      position: relative;
+    }
+
+    .cert-item::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #111111;
+    }
+
+    /* Print action bar */
+    .print-bar {
+      position: sticky;
+      top: 0;
+      background: #f4f4f5;
+      border: 1px solid #d4d4d8;
+      border-radius: 6px;
+      padding: 7px 12px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+    }
+
+    .print-btn {
+      background: #09090b;
+      color: #ffffff;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar no-print">
+    <span><strong>ATS-Friendly Resume (Standard 2-Page Format)</strong> &bull; Calibri font, zero graphics/tables, 100% parser compatible</span>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <header>
+    <h1>Md. Ferdous Hasan Zihad Akash</h1>
+    <div class="contact-line">
+      Dhaka, Bangladesh
+      <span class="separator">&bull;</span>
+      +880 1959-214183
+      <span class="separator">&bull;</span>
+      <a href="mailto:fhzakash@gmail.com">fhzakash@gmail.com</a>
+    </div>
+    <div class="contact-line">
+      <a href="https://linkedin.com/in/fhzakash" target="_blank">linkedin.com/in/fhzakash</a>
+      <span class="separator">&bull;</span>
+      <a href="https://github.com/ferdousAkash" target="_blank">github.com/ferdousAkash</a>
+      <span class="separator">&bull;</span>
+      <a href="https://portfolio-2vmo.vercel.app/" target="_blank">portfolio-2vmo.vercel.app</a>
+    </div>
+  </header>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <section>
+    <h2>Professional Summary</h2>
+    <p>
+      Results-driven Technical Project Manager and AI/Full-Stack Software Engineer with proven success driving cross-functional delivery, operational scaling, and technical implementations. Currently leading remote recruitment operations and AI-assisted workflows at Skarion, where rapid promotions (Intern to Executive to Project Manager within six months) and client delivery contributed over $50,000 in company revenue. Backed by a B.Sc. in Computer Science &amp; Engineering (AI Major) from North South University, graduate studies in Statistics &amp; Data Science at Jahangirnagar University, and hands-on engineering experience spanning PyTorch/TFLite computer vision models, LLM pipelines, and production MERN/PERN applications. Champion debater (NSUDC Intra 2024) recognized for executive communication, analytical rigor, and team leadership.
+    </p>
+  </section>
+
+  <!-- CORE COMPETENCIES -->
+  <section>
+    <h2>Core Competencies</h2>
+    <div class="skill-category">
+      <span class="skill-label">Project &amp; Operations Management:</span> Agile &amp; Waterfall Delivery, Cross-Functional Leadership, KPI &amp; SLA Governance, Standard Operating Procedures (SOP), Client Conversion &amp; B2B Delivery, Workload Planning, Risk Assessment.
+    </div>
+    <div class="skill-category">
+      <span class="skill-label">AI, Machine Learning &amp; Data:</span> Python, PyTorch, TensorFlow Lite, Computer Vision (CNN, MobileNet V2), Large Language Models (LLMs), Prompt Engineering &amp; QA, Natural Language Processing (NLP), OpenCV, Web Scraping, Statistical Data Analysis.
+    </div>
+    <div class="skill-category">
+      <span class="skill-label">Software Engineering &amp; Databases:</span> JavaScript (ES6+), React.js, Node.js, Express.js, Flutter, Dart, Java, C++, PHP, RESTful APIs, GraphQL, WebSockets, JWT &amp; bcrypt Hashing, MongoDB (Mongoose), PostgreSQL, MySQL, Firebase.
+    </div>
+    <div class="skill-category">
+      <span class="skill-label">DevOps &amp; Tools:</span> Git, GitHub, Postman, Linux, Docker, ATS Keyword Optimization, Technical Documentation, Public Speaking &amp; Competitive Debate.
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-company">SKARION</span>
+        <span class="entry-location">United States (Remote)</span>
+      </div>
+
+      <div class="sub-role">
+        <div class="sub-role-header">
+          <span>Project Manager</span>
+          <span class="entry-date">May 2026 &ndash; Present</span>
+        </div>
+        <ul>
+          <li>Direct cross-functional operations across candidate onboarding, technical talent services, market research, and AI-enabled delivery pipelines, maintaining alignment with executive priorities.</li>
+          <li>Generated and supported over $50,000 in company revenue by facilitating client conversion, standardizing service delivery checkpoints, and maintaining client accounts.</li>
+          <li>Lead workload allocation, assign sprint tasks, establish delivery timelines, and resolve operational blockers across technical research, resume engineering, recruiter outreach, and candidate support.</li>
+          <li>Designed and instituted structured project trackers, KPI reporting, quality-control checkpoints, and prompt evaluation workflows for Skarion's internal AI recruitment pipeline, candidate portal, and job scraping engine.</li>
+          <li>Identify schedule, resource, and delivery risks early; execute corrective action plans and escalate critical path issues before impacting business deliverables.</li>
+        </ul>
+      </div>
+
+      <div class="sub-role">
+        <div class="sub-role-header">
+          <span>Executive</span>
+          <span class="entry-date">Mar 2026 &ndash; May 2026</span>
+        </div>
+        <ul>
+          <li>Coordinated candidate service delivery for specialized technical domains including GIS, CAD drafting, OSP engineering, Solar PV, and FPGA engineering roles.</li>
+          <li>Audited and tailored 10&ndash;12 technical candidate profiles per cycle against target job descriptions, ATS parsing parameters, and US market expectations to maximize interview rates.</li>
+          <li>Built targeted recruiter contact databases and executed outreach campaigns across email and LinkedIn, generating qualified recruiter conversations and client interviews.</li>
+          <li>Supported Python web scraping, data deduplication, and validation pipelines; conducted QA testing across AI prompts, candidate dashboards, and search logic.</li>
+        </ul>
+      </div>
+
+      <div class="sub-role">
+        <div class="sub-role-header">
+          <span>Talent &amp; Outreach Intern</span>
+          <span class="entry-date">Dec 2025 &ndash; Feb 2026</span>
+        </div>
+        <ul>
+          <li>Maintained centralized project trackers, action item registers, meeting minutes, and deliverable follow-ups across concurrent client workstreams.</li>
+          <li>Collected, cleaned, and organized operational datasets using Excel and Google Sheets; earned promotion to Executive within 3 months based on execution quality and initiative.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-company">CODVEDA TECHNOLOGIES</span>
+        <span class="entry-location">Remote</span>
+      </div>
+      <div class="sub-role-header">
+        <span>Full-Stack Development Intern</span>
+        <span class="entry-date">Jul 2025 &ndash; Oct 2025</span>
+      </div>
+      <ul>
+        <li>Designed and implemented full-stack web applications from initial architecture and environment configuration through local testing and deployment.</li>
+        <li>Engineered scalable RESTful API backends using Node.js and Express, implementing comprehensive CRUD operations, robust error handling, and Postman-tested endpoints.</li>
+        <li>Built modular, responsive user interfaces with HTML5, CSS3, modern JavaScript, and component-based frontend frameworks (React/Vue).</li>
+        <li>Integrated MongoDB using Mongoose ORM and relational databases (MySQL/PostgreSQL with Sequelize/Prisma), defining relational schemas and data validation logic.</li>
+        <li>Implemented secure user authentication and role-based access control (RBAC) using JSON Web Tokens (JWT) and bcrypt password hashing.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-company">GAOTEK INC.</span>
+        <span class="entry-location">New York, USA (Remote)</span>
+      </div>
+      <div class="sub-role-header">
+        <span>Assistant Squad Leader &amp; Web Developer Intern</span>
+        <span class="entry-date">Jun 2024 &ndash; Oct 2024</span>
+      </div>
+      <ul>
+        <li>Promoted to Assistant Squad Leader (Sep 2024), leading weekly intern coordination meetings, managing task assignments, tracking deliverables, and unblocking team members.</li>
+        <li>Developed, customized, and maintained responsive WordPress websites, themes, and plugins to enhance performance, usability, and SEO rankings.</li>
+        <li>Resolved technical issues, implemented site security protocols, and managed scheduled backups in a high-volume remote engineering environment.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-company">NSU DEBATE CLUB (NSUDC)</span>
+        <span class="entry-location">Dhaka, Bangladesh</span>
+      </div>
+      <div class="sub-role-header">
+        <span>Sub-Executive (Debate Development)</span>
+        <span class="entry-date">Dec 2023 &ndash; Jul 2025</span>
+      </div>
+      <ul>
+        <li>Formulated and executed structured training curricula to develop critical argumentation, public speaking, and strategic thinking for university debaters.</li>
+        <li>Organized weekly workshop series, mock debate sessions, and tournament preparations; achieved <strong>Champion</strong> title at NSUDC Intra 2024 (Asian Parliamentary Debate).</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-company">NSU ACM STUDENT CHAPTER</span>
+        <span class="entry-location">Dhaka, Bangladesh</span>
+      </div>
+      <div class="sub-role-header">
+        <span>Research &amp; Development Member / Senior Member</span>
+        <span class="entry-date">Jan 2021 &ndash; May 2023</span>
+      </div>
+      <ul>
+        <li>Collaborated within the R&amp;D wing on an NLP-based native Bengali speech-to-text system prototype.</li>
+        <li>Coordinated vendor logistics, scheduling, and operational delivery for major campus technical events, including HACKNSU and the University Capstone Project Showcase.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- KEY TECHNICAL PROJECTS -->
+  <section>
+    <h2>Key Technical Projects</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Krishi &ndash; AI-Powered Mobile Agricultural Assistant &amp; Disease Detector</span>
+        <span class="entry-date">2024</span>
+      </div>
+      <div class="entry-subtitle">
+        <span>Flutter, Dart, PyTorch, TensorFlow Lite, MobileNet V2, CNN, Firebase, Rapid API</span>
+        <span>github.com/ferdousAkash/Krishi</span>
+      </div>
+      <ul>
+        <li>Engineered a cross-platform mobile application providing farmers with localized weather forecasts, e-commerce ordering for agricultural inputs, and offline crop disease diagnostics.</li>
+        <li>Trained CNN and MobileNet V2 models in PyTorch and deployed optimized TensorFlow Lite models for on-device detection of potato and tomato leaf diseases (96.7% confidence achieved).</li>
+        <li>Implemented Firebase user authentication, secure payment handling, and external REST API integrations.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">MEDEASE &ndash; End-to-End Medical Conversational AI Chatbot</span>
+        <span class="entry-date">2025</span>
+      </div>
+      <div class="entry-subtitle">
+        <span>Python, Large Language Models (LLMs), NLP, Jupyter Notebook, Deep Learning</span>
+        <span>github.com/ferdousAkash/End-To-End-Medical-Chatbot</span>
+      </div>
+      <ul>
+        <li>Developed an interactive conversational healthcare assistant utilizing LLM retrieval workflows to deliver structured, context-grounded medical question-answering.</li>
+        <li>Integrated exploratory tumor classification and medical analysis pipelines within reproducible Python notebook workflows.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Durjog Bondhu &ndash; Disaster Relief &amp; Aid Management System</span>
+        <span class="entry-date">2023</span>
+      </div>
+      <div class="entry-subtitle">
+        <span>PHP, MySQL, HTML5, CSS3, Password Hashing, Session Security</span>
+        <span>github.com/ferdousAkash/Durjog-Bondhu</span>
+      </div>
+      <ul>
+        <li>Designed and deployed a full-stack disaster response platform during the 2022 Sylhet floods to ensure transparent, accountable aid distribution.</li>
+        <li>Built National ID (NID) verification into beneficiary intake forms to eliminate duplicate claims and ensure funds directly reached verified disaster-affected families.</li>
+        <li>Implemented an authenticated administrative CMS to track inventory, subsidized survival supply kits (priced at 30% base cost), and order deliveries.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Full-Stack Web Application Suite</span>
+        <span class="entry-date">2025</span>
+      </div>
+      <div class="entry-subtitle">
+        <span>Node.js, Express.js, React.js, JWT, bcrypt, MongoDB, PostgreSQL, Postman</span>
+        <span>github.com/ferdousAkash/Full_stack_task_Codveda_LEVEL1</span>
+      </div>
+      <ul>
+        <li>Engineered a modular full-stack web application featuring token-based authentication, protected API routes, database modeling with Mongoose/Sequelize, and responsive UI components.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-company">Jahangirnagar University</span>
+        <span class="entry-location">Dhaka, Bangladesh</span>
+      </div>
+      <div class="entry-subtitle">
+        <span>Master of Science (M.Sc.) in Statistics &amp; Data Science</span>
+        <span class="entry-date">Jan 2026 &ndash; Dec 2026</span>
+      </div>
+      <p style="font-size: 8.8pt; color: #333333; margin-top: 1pt;">
+        Advanced coursework in statistical modeling, quantitative inference, and applied data science.
+      </p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-company">North South University</span>
+        <span class="entry-location">Dhaka, Bangladesh</span>
+      </div>
+      <div class="entry-subtitle">
+        <span>Bachelor of Science (B.Sc.) in Computer Science &amp; Engineering</span>
+        <span class="entry-date">May 2020 &ndash; Jan 2024</span>
+      </div>
+      <p style="font-size: 8.8pt; color: #333333; margin-top: 1pt;">
+        <strong>Major:</strong> Artificial Intelligence &bull; <strong>Minor:</strong> Data Communication &amp; Network &bull; <strong>Honors:</strong> Champion of NSUDC Intra Debate 2024; Sub-Executive at NSU Debate Club; Senior Member at NSU ACM Student Chapter.
+      </p>
+    </div>
+  </section>
+
+  <!-- LICENSES & CERTIFICATIONS -->
+  <section>
+    <h2>Licenses &amp; Certifications</h2>
+    <div class="cert-list">
+      <div class="cert-item"><strong>Python (Basic) Certificate</strong> &ndash; HackerRank (ID: 6e5d888ea548 | Aug 2025)</div>
+      <div class="cert-item"><strong>Implementing ISO/IEC 27001 &amp; ISO/IEC 27032</strong> &ndash; PECB (Oct 2024)</div>
+      <div class="cert-item"><strong>Deep Learning: CNN Image Classification</strong> &ndash; Udemy (Oct 2024)</div>
+      <div class="cert-item"><strong>Beginner's Guide to Cyber Security</strong> &ndash; Udemy (Oct 2024)</div>
+      <div class="cert-item"><strong>Complete Flutter Development Guide [2024]</strong> &ndash; Udemy (2024)</div>
+      <div class="cert-item"><strong>Discovering LinkedIn for Career Growth</strong> &ndash; North South University (Apr 2024)</div>
+    </div>
+  </section>
+
+</body>
+</html>

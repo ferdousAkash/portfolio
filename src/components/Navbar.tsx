@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, Moon, Printer, Sun, X } from 'lucide-react';
+import { FileText, Menu, Moon, Printer, Sun, X } from 'lucide-react';
 import { PROFILE } from '../data/portfolio';
 
 interface NavbarProps {
@@ -48,6 +48,16 @@ export function Navbar({ darkMode, onToggleTheme }: NavbarProps) {
         </nav>
 
         <div className="flex items-center gap-2">
+          <a
+            href="/resume.pdf"
+            download="Md_Ferdous_Hasan_Zihad_Akash_Resume.pdf"
+            title="Download ATS Resume PDF"
+            className="hidden items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700 transition-colors hover:bg-slate-50 sm:inline-flex dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:border-zinc-700 dark:hover:text-white"
+          >
+            <FileText className="h-3.5 w-3.5" />
+            <span>Resume</span>
+          </a>
+
           <button
             type="button"
             onClick={() => window.print()}
@@ -98,6 +108,15 @@ export function Navbar({ darkMode, onToggleTheme }: NavbarProps) {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              download="Md_Ferdous_Hasan_Zihad_Akash_Resume.pdf"
+              onClick={() => setMobileOpen(false)}
+              className="mt-1 flex items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-left text-sm font-medium text-slate-700 dark:border-zinc-800 dark:text-zinc-300"
+            >
+              <FileText className="h-4 w-4" />
+              Download ATS Resume (PDF)
+            </a>
             <button
               type="button"
               onClick={() => {
@@ -107,7 +126,7 @@ export function Navbar({ darkMode, onToggleTheme }: NavbarProps) {
               className="mt-1 flex items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-left text-sm font-medium text-slate-700 dark:border-zinc-800 dark:text-zinc-300"
             >
               <Printer className="h-4 w-4" />
-              Save Resume / Portfolio PDF
+              Save Portfolio PDF
             </button>
           </div>
         </div>
