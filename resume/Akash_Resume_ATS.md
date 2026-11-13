@@ -24,18 +24,17 @@ Technical Project Manager with a software engineering background in AI and full-
 *Cross-functional technical recruitment operations, candidate delivery, and AI workflow automation.*
 
 **Project Manager** | May 2026 – Present
-- Direct cross-functional operations across candidate onboarding, technical talent services, market research, and AI-enabled delivery pipelines, maintaining alignment with executive priorities.
-- Generated and supported over $50,000 in company revenue by facilitating client conversion, standardizing service delivery checkpoints, and maintaining long-term client accounts.
-- Lead workload allocation, assign sprint tasks, establish delivery timelines, and resolve operational blockers across technical research, resume engineering, recruiter outreach, and candidate support.
-- Designed and instituted structured project trackers, KPI reporting, quality-control checkpoints, and Standard Operating Procedures (SOPs) to monitor application volume, response rates, and team productivity.
-- Drive continuous testing, prompt evaluation, and feature validation for Skarion's internal AI recruitment pipeline, candidate portal, and Python-based job scraping engine.
-- Identify schedule, resource, and delivery risks early; execute corrective action plans and escalate critical path issues before impacting business deliverables.
+- Direct cross-functional Agile operations across candidate onboarding, technical talent services, and AI delivery pipelines, facilitating Scrum ceremonies (Sprint Planning, Stand-ups, Backlog Grooming) via Jira and Confluence.
+- Generated and supported over $50,000 in company revenue by accelerating client conversion, standardizing service delivery checkpoints, and maintaining B2B client accounts under strict SLA governance.
+- Lead workload allocation, author User Stories and Acceptance Criteria, track sprint velocity, and resolve operational blockers across technical research, resume engineering, and recruiter outreach.
+- Designed structured KPI dashboards, quality-control (QA) checkpoints, and Standard Operating Procedures (SOPs) for Skarion's internal AI recruitment pipeline, candidate portal, and automated job scraping engine.
+- Identify schedule, scope, and resource risks early; execute mitigation plans and escalate critical path issues before impacting business deliverables.
 
 **Executive** | Mar 2026 – May 2026
-- Coordinated candidate service delivery for specialized technical domains, including GIS, CAD drafting, OSP engineering, Solar PV, and FPGA engineering roles.
-- Audited and tailored 10–12 technical candidate profiles per cycle against target job descriptions, ATS parsing parameters, and US market expectations to maximize interview rates.
+- Coordinated technical candidate delivery for specialized engineering domains (GIS, CAD drafting, OSP engineering, Solar PV, FPGA), ensuring alignment with US client specifications.
+- Audited and tailored 10–12 technical candidate profiles per sprint cycle against target job descriptions, ATS parsing parameters, and industry benchmarks to maximize interview rates.
 - Built targeted recruiter contact databases and executed outreach campaigns across email and LinkedIn, generating qualified recruiter conversations and client interviews.
-- Supported Python-based web scraping, data extraction, deduplication, and data validation pipelines; conducted QA testing across AI prompts, candidate dashboards, and search logic.
+- Supported Python web scraping, data extraction, and validation pipelines; conducted QA testing and prompt evaluation across AI candidate dashboards and search algorithms.
 
 **Talent & Outreach Intern** | Dec 2025 – Feb 2026
 - Maintained centralized project trackers, action item registers, meeting minutes, and deliverable follow-ups across multiple concurrent client workstreams.
